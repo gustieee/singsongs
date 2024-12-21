@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Grey+Qo&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+        #home {
+            background-image: url(image/home.jpg);
+            background-size: cover;
+            width: 100%;
+            min-height: 100vh;
+            overflow: hidden;
+            position: relative;
+            background-position: center top;
+        }
+
+        #home::before {
+            content: '';
+            position: absolute;
+            z-index: 0;
+            background-color: black;
+            opacity: 0.4;
+            width: 100%;
+            top: 0;
+            left: 0;
+            height: 100%;
+        }
+
+        @media (max-width: 768px) {
+            .desktop-menu {
+                display: none;
+            }
+        }
+
+    </style>
+</head>
+<body class="font-['Montserrat'] bg-black">
+    <div class="flex flex-col" id="home">
+        <div class="flex gap-10 items-center justify-between py-2 px-4 md:px-7">
+            <img src="image/netflix logo.png" class="cursor-pointer z-10 w-[30%] sm:w-[20%] md:w-[15%] lg:w-[10%]" alt="Netflix Logo">
+            <div class="flex justify-between w-full">
+                <div class="z-10 gap-3 md:gap-5 hidden md:flex font-semibold items-center text-white text-sm lg:text-base desktop-menu">
+                    <p class="cursor-pointer">Homepage</p>
+                    <p class="cursor-pointer">Series</p>
+                    <p class="cursor-pointer">Movies</p>
+                    <p class="cursor-pointer">New and Popular</p>
+                    <p class="cursor-pointer">My List</p>
+                </div>
+                <div class="z-10 text-white flex gap-3 md:gap-5 items-center">
+                    <div class="hidden md:flex gap-3 md:gap-5 items-center">
+                        <i class="bi bi-search text-[20px]"></i>
+                        <p class="font-semibold text-sm lg:text-base">ADULT</p>
+                    </div> 
+                    <i class="bi bi-bell-fill text-[20px] hidden md:block"></i>
+                </div>
+            </div>
+            <i class="text-white z-10 bi bi-list text-3xl md:hidden "></i>
+        </div>
+        <div class="px-4 md:px-10 gap-5 flex w-full flex-col h-[calc(100vh-60px)] items-start justify-center">
+            <div class="text-xl sm:text-2xl md:text-3xl font-semibold text-white z-10">
+                <p>This Is How I Want To Say Happy Birthday To u Acel</p>
+            </div>
+            <div class="font-semibold z-10 text-white text-sm sm:text-base">
+                <p>i want u to know how much u mean to me and how much i love you acel, <br> and i wanna say thank u for coming into my life, <br> i hope u will understand how much i love u after u saw this, <br> okeyy sgitu aja happy birthday archela🩷</p>
+            </div>
+            <div class="font-semibold z-10 text-white text-sm sm:text-base">
+                <p>Click "Play" to see the details</p>
+            </div>
+            <div class="flex gap-3 md:gap-5">
+                <div class="flex bg-white cursor-pointer z-10 py-2 px-4 md:px-5 rounded-md items-center gap-2 text-sm sm:text-base" id="buttonPlay">
+                    <i class="bi bi-play-fill"></i>
+                    <p class="font-semibold">Play</p>
+                </div>
+                <div class="flex bg-gray-400 cursor-pointer text-white bg-opacity-60 z-10 py-2 px-4 md:px-5 rounded-md items-center gap-2 text-sm sm:text-base">
+                    <i class="bi bi-exclamation-circle"></i>
+                    <p class="font-semibold" id="music">Info</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Ini episode 1 -->
+
+    <!-- Ini episode 2 -->
+    <div class="absolute inset-0 bg-black bg-opacity-30 z-10 flex flex-col items-center transition-all justify-center opacity-0 pointer-events-none" id="card">
+        <div class="flex flex-col text-white bg-black gap-3 items-center w-[80%] md:w-[40%]">
+            <img src="image/pictinfo.jpg" class="w-full" alt="">
+            <div class="flex flex-col gap-5 px-3 py-3 font-semibold">
+                <p class="text-[18px] md:text-2xl">Hi Acell✨</p>
+                <div class="flex flex-col gap-5 overflow-scroll h-[200px] overflow-x-hidden">
+                    <p class="text-[13px] md:text-1xl">hai acell, happy birthday yaa ajshshshs, pertama2 gua mau bilang maaff acel kalo gua sering bikin kesel dan bikin kita berantem terus, dan yang kedua i want to tell u how much u mean to me acel, gua ga pengen lu kenapa2 gua pgn liat lu happy terus dan gua pengen di deket lu terus, maaff yaa kalau terkesannya alay tapi emang gua sayanggggggg banget sama elu, terus jugak lu jangan insecure terus lu tuh udh paling cantik sedunia pokonya lu gaboleh insecure terus yaa, makasih acel udah mau deket sama gua dari kelas 7 semoga lu happy terus (sama gua) okeh bye acel.</p>
+                    <p class="text-[13px] md:text-1xl">hai acell, happy birthday yaa ajshshshs, pertama2 gua mau bilang maaff acel kalo gua sering bikin kesel dan bikin kita berantem terus, dan yang kedua i want to tell u how much u mean to me acel, gua ga pengen lu kenapa2 gua pgn liat lu happy terus dan gua pengen di deket lu terus, maaff yaa kalau terkesannya alay tapi emang gua sayanggggggg banget sama elu, terus jugak lu jangan insecure terus lu tuh udh paling cantik sedunia pokonya lu gaboleh insecure terus yaa, makasih acel udah mau deket sama gua dari kelas 7 semoga lu happy terus (sama gua) okeh bye acel.</p>
+                    <p class="text-[13px] md:text-1xl">hai acell, happy birthday yaa ajshshshs, pertama2 gua mau bilang maaff acel kalo gua sering bikin kesel dan bikin kita berantem terus, dan yang kedua i want to tell u how much u mean to me acel, gua ga pengen lu kenapa2 gua pgn liat lu happy terus dan gua pengen di deket lu terus, maaff yaa kalau terkesannya alay tapi emang gua sayanggggggg banget sama elu, terus jugak lu jangan insecure terus lu tuh udh paling cantik sedunia pokonya lu gaboleh insecure terus yaa, makasih acel udah mau deket sama gua dari kelas 7 semoga lu happy terus (sama gua) okeh bye acel.</p>
+                </div>
+                <button class="bg-white text-black w-fit py-2 px-4 font-semibold rounded-sm" id="back">Back</button>
+            </div>
+        </div>
+    </div>
+    <!--  -->
+    <div class="py-10 px-4 md:px-7">
+        <div class="flex flex-col">
+            <p class="text-white font-semibold font-['Montserrat'] text-3xl">Picts of Acell✨</p>
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-5 mt-10">
+                <div class="flex">
+                    <img src="image/pict1.jpg" class="rounded-md md:rounded-none" alt="">
+                </div>
+                <div class="flex">
+                    <img src="image/pict2.jpg" class="rounded-md md:rounded-none" alt="">
+                </div>
+                <div>
+                    <img src="image/pict3.jpg" class="rounded-md md:rounded-none" alt="">
+                </div>
+                <div>
+                    <img src="image/pict4.jpg" class="rounded-md md:rounded-none" alt="">
+                </div>
+                <div class="flex">
+                    <img src="image/pict5.jpg" class="rounded-md md:rounded-none" alt="">
+                </div>
+                <div class="flex">
+                    <img src="image/pict6.jpg" class="rounded-md md:rounded-none" alt="">
+                </div>
+                <div>
+                    <img src="image/pict7.jpg" class="rounded-md md:rounded-none" alt="">
+                </div>
+                <div>
+                    <img src="image/pictinfo.jpg" class="rounded-md md:rounded-none" alt="">
+                </div>
+                <div>
+                    <img src="image/pict8.jpg" class="rounded-md md:rounded-none" alt="">
+                </div>
+                <div>
+                    <img src="image/pict9.jpg" class="rounded-md md:rounded-none" alt="">
+                </div>
+                <div>
+                    <img src="image/pict10.jpg" class="rounded-md md:rounded-none" alt="">
+                </div>
+                <div>
+                    <img src="image/pict11.jpg" class="rounded-md md:rounded-none" alt="">
+                </div>
+            </div>
+        </div>
+    </div> 
+    <audio src="audio/Raisa - Jatuh Hati _ Lirik Lagu - MS (youtube).mp3" type="audio/mpeg" id="audio"></audio>
+    <script>
+        const button = document.getElementById('buttonPlay')
+        const card = document.getElementById('card')
+        const back = document.getElementById('back')
+        const audio = document.getElementById('audio')
+        const play = document.getElementById('music')
+        let IsPlaying = false
+
+        play.addEventListener('click' , function(){
+            if (audio.paused) {
+                audio.play()
+                IsPlaying = true;
+            }else{
+                audio.pause()
+                IsPlaying = false;
+            }
+        })
+
+        button.addEventListener('click', function(e){
+            card.classList.remove('opacity-0')
+            card.classList.remove('pointer-events-none')
+
+            document.querySelector('body').style.overflow = "hidden"
+            window.scrollTo({
+                top: 0
+            })
+        })
+
+        back.addEventListener('click',function(e){
+            card.classList.add('opacity-0')
+            card.classList.add('pointer-events-none')
+
+            document.querySelector('body').style.overflow = "auto"
+        })
+    </script>
+</body>
